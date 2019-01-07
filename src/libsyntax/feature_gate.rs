@@ -474,9 +474,6 @@ declare_features! (
     // Adds `reason` and `expect` lint attributes.
     (active, lint_reasons, "1.31.0", Some(54503), None),
 
-    // `extern crate self as foo;` puts local crate root into extern prelude under name `foo`.
-    (active, extern_crate_self, "1.31.0", Some(56409), None),
-
     // Allows paths to enum variants on type aliases.
     (active, type_alias_enum_variants, "1.31.0", Some(49683), None),
 
@@ -689,6 +686,8 @@ declare_features! (
     (accepted, repr_packed, "1.33.0", Some(33158), None),
     // Allows calling `const unsafe fn` inside `unsafe` blocks in `const fn` functions.
     (accepted, min_const_unsafe_fn, "1.33.0", Some(55607), None),
+    // `extern crate self as foo;` puts local crate root into extern prelude under name `foo`.
+    (accepted, extern_crate_self, "1.33.0", Some(56409), None),
 );
 
 // If you change this, please modify `src/doc/unstable-book` as well. You must
